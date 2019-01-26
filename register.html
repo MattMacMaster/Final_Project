@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+              
+</head>
+<body><!-- Errors made -->
+              <form action="" name="infoForm">
+                            <link rel="stylesheet" href="Style.css">
+                     <p id="errorName" name= "errName"style="display:none;">Please enter your name.</p>
+                     <p id="errorPass" name="errPass" style="display:none;">Please enter your password.</p>
+                     <p id="erroremail" name="errEmail"style="display:none;">Please enter a valid email</p>
+                     <p id="errorphone" name="errPhone"style="display:none;">Please enter a phone number</p>
+                     <p id="erroraddress" name="errAddress"style="display:none;">Please enter an address</p>
+                     <p id="errorpostal" name="errPostal"style="display:none;">Please enter a valid postal code.</p>
+                     <p id="errorgender" name="errGender"style="display:none;">Please pick a gender.</p>
+                     <p id="errorcity" name="errCity" style="display:none;">Please enter a city.</p>
+                     <!-- Base Information and Infrmation boxes-->
+Full Name:<input id="fullName" type="text" name="fullName"  required><br/>
+       <br/>
+       Password:<input id="password" type="password" name="password" required><br/><br/>
+        Email:<input id="email" type="email" name="email" required><br/><br/>
+       Phone:<input id="phone" type="phone" name="phone" required><br/><br/>
+       Address:<input id="address" type="text" name="address" required><br/><br/>
+       City:<input id="city" type="text" name="city" required><br/><br/>
+       Province:<select  name="Province">
+              <option value="alberta">AB</option>
+              <option value="british_columbia">BC</option>
+              <option value="yukon">TY</option>
+              <option value="manitoba">MB</option>
+              <option value="new_brunswick">NB</option>
+              <option value="newfoundland">NL</option>
+              <option value="northwest_territories">NT</option>
+              <option value="nova_scotia">NS</option>
+              <option value="nunavut">NU</option>
+              <option value="ontario">ON</option>
+              <option value="P.E.I">PE</option>
+              <option value="quebec">QC</option>
+              <option value="saskatchewan">SK</option>
+       </select><br/><br/>
+       Postal Code:<input id="postalid" type="text" name="postalname" required>
+<br/><br/>
+       Gender<select size="2" name="gender" required >
+                     <option value="female">Female</option>
+                     <option value ="Male">Male</option>
+</select><br/><br/><!-- submit button-->
+<input type="submit" id="submit" value="submit" value="" name="submit">
+<!-- Hidden error text-->
+<div class="secrets">
+<p  id="secretName" name="secretName">(No specail characters)</p>
+</div>
+<div class="secrets">
+<p  id="secretPass"name="secretPass">(Dont make it too long)</p>
+</div>
+<div class="secrets">
+<p  id="secretEmail"name="secretEmail">(Gmail only)</p>
+</div>
+<div class="secrets">
+<p  id="secretPhone"name="secretPhone">(Include Area Code)</p>
+</div>
+<div class="secrets">
+<p  id="secretAdd"name="secretAdd">(One Word)</p>
+</div>
+<div class="secrets">
+<p  id="secretCity"name="secretCity">(Less than 25 Characters)</p>
+</div>
+<div class="secrets">
+<p id="secretPro"name="secretPro">(AB=Alberta,BC=British Columbia,TY=Yukon</br>,MB=Manitoba,NB=New Brunswick,etc..)</p>
+</div>
+<div class="secrets">
+<p  id="secretPostal"name="secretPostal">(ALL CAPS)</p>
+</div>
+<div class="secrets">
+<p  id="secretGen"name="secretGen">(Must be selected)</p>
+</div><!-- Adds script-->
+<script src="register.js"></script>
+</form>
+       </body>
+
+</html>

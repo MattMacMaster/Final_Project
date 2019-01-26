@@ -1,0 +1,133 @@
+
+   html{
+box-sizing:border-box;
+text-align:center;
+padding-bottom: -200px;
+}
+*, *:before, *:after {
+
+    box-sizing:inherit;
+}
+
+   h1{text-decoration:underline;}
+/*background image added*/
+   body
+   {
+    background:url(Img/ocean-sunrays.jpg);
+    background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+   h1{
+        font-family: 'Permanent Marker', cursive;
+    }
+    
+    p
+     {
+        color: black;
+    }
+   #contact {
+       position: relative;
+    padding: -1px;
+    border: 2px solid black;
+       height:120px;
+       width:120px;
+right:120px;
+
+   }
+
+#register
+{
+    position: relative;
+    padding: -1px;
+    border: 2px solid black;
+    height:120px;
+    width:120px;
+left:120px;
+}
+
+
+#Bordernav{
+    Border-right: 1px solid white;
+}
+
+#travelpic1
+{
+    height: 190px;
+   max-width: 15%;
+    padding:0px;
+    border: 2px solid black;
+
+}
+#caption1{
+    position: relative;
+    text-decoration: underline;
+    font-weight: bold;
+right:180px;
+top:50px;
+}
+#caption2{
+position: relative;
+    text-decoration: underline;
+    font-weight: bold;
+    left:180px;
+    top:10px;
+}
+
+
+#copyright{
+position: relative;
+font-weight:bold;
+top:250px;
+}
+#tableForm
+{
+    position:relative;
+left:40%;
+}
+#tableId img{
+    height:160px;
+    width: 160px;
+  border:1px solid  black ;
+}
+
+#table1{
+    position:relative;
+    left:120px;
+}
+/* adds all secret error text opacity only to be updated on button click*/
+.secrets p{
+    position:relative;
+    padding:2px;
+    left:220px;
+    top:-405px;
+    opacity:0.0;
+}
+
+.secrets #secretName {
+    left:205px;
+
+}
+.secrets #secretPass{
+    left:205px;
+}
+.secrets #secretEmail{
+    left:160px;
+}
+.secrets #secretPhone{
+    left:180px;
+}
+.secrets #secretAdd{
+    left:160px;
+}
+.secrets #secretCity{
+    left:190px;
+}
+
+.secrets #secretGen{
+    left:140px;
+}
+.secrets #secretPostal{
+    left:175px;
+}
