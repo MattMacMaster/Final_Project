@@ -3,7 +3,8 @@ var tableId = document.getElementById("tableId");
 var images = ["Img/Barrier.jpeg","Img/mexico.jpg","Img/Hawaii.jpg","Img/tahiti.jpg"];
 var description  = ["Great Barrier Reef","Mexico","Hawaii","Tahiti"];
 var urls = ["https://travel.usnews.com/Great_Barrier_Reef_Australia/Things_To_Do/","https://www.atlasobscura.com/things-to-do/mexico","http://www.prideofmaui.com/blog/maui/top-things-hawaii.html","https://travel.usnews.com/Tahiti_French_Polynesia/Things_To_Do/"];
-
+var i=0;
+var z=0;
 //var tablerows = document.getElementById('table1').rows.length;
 
 //Develope needed nodes
@@ -21,6 +22,19 @@ var firstRow = document.createElement('tr')
    table.appendChild(firstRow);
    console.log(table);
 
+//onclick function
+function myFunction(){
+   var myWindow = window.open(urls[z]);
+   console.log(urls[z]);
+     setTimeout(function ()
+      { myWindow.close();
+      }, 3000)
+ z++
+     }
+
+
+
+
 //For loop adds pictures and description to table format
 for(i=0;i<images.length;i++)
 {
@@ -30,14 +44,16 @@ for(i=0;i<images.length;i++)
    var newImg = document.createElement('img');
    
    newImg.src = images[i];
-   newImg.href = urls[i];
+   
    console.log(urls[i]);
    var newDesc = document.createTextNode(description[i]);
   
-
     
        newDataImg.appendChild(newImg);
-       
+
+       newDataImg.addEventListener("click", function(event){
+          onclick=myFunction();
+       });
        newDataDesc.className = "descClass";
        newDataDesc.appendChild(newDesc)
        newRow.appendChild(newDataImg);
